@@ -2,12 +2,10 @@ hr {
   width: 400px;
   margin: 0 auto;
   color: rgb(249, 95, 40);
+  max-width: 100%;
 }
 
 @media (max-width: 600px) {
-  body {
-    max-width: 100vh;
-  }
   .bg-image {
     display: none;
   }
