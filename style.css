@@ -5,6 +5,9 @@ hr {
 }
 
 @media (max-width: 600px) {
+  body {
+    max-width: 100vh;
+  }
   .bg-image {
     display: none;
   }
