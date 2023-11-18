@@ -3,3 +3,19 @@ hr {
   margin: 0 auto;
   color: rgb(249, 95, 40);
 }
+
+@media (max-width: 600px) {
+  .bg-image {
+    display: none;
+  }
+  .carousel-inner h1 {
+    font-size: 20px;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .navbar .sfondo a img {
+    src: url(car-front-fill.svg);
+  }
+}
+*/

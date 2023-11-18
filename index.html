@@ -18,7 +18,9 @@
       class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-warning border-5"
     >
       <div class="container-fluid">
-        <a class="navbar-brand ms-3 fs-4 fw-bold" href="#"><img src="hertz-logo-black.png" class="w-50" alt=""></a>
+        <a class="navbar-brand ms-3 fs-4 fw-bold" href="#">
+          <img src="hertz-logo-black.png" class="w-50" alt="">
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -67,7 +69,7 @@
     </nav>
 
     <!-- Hero -->
-    <div class="bg-image" style="max-width: 22rem">
+    <div class="bg-image" style="max-width: 22rem d-sm-none">
       <img src="Hero_HP_EU.jpg" class="img-fluid min-vw-100 min-vh-100" />
       <div
         class="mask text-light d-flex align-content-center flex-column text-start"
@@ -80,7 +82,16 @@
       </div>
     </div>
 
-    <div class="pt-5 mb-5">
+    <div class="container d-sm-block d-md-none">
+      <h1 class="display-1 text-black mt-5 ms-5 fw-bold">
+        Hertz Car Ride.
+        <br />
+        Hertz. Let's Go!
+      </h1>
+    </div>
+
+
+    <div class="pt-md-5 mb-5">
       <div class="container">
         <header class="lead mt-5">
           <h2 class="text-center display-5 fw-bold">Change scenery, not standards.</h2>
@@ -138,7 +149,7 @@
     </div>
 
     <div class="pt-5 mt-5 mb-5">
-      <div class="container">
+
         <header class="lead pb-5">
           <h2 class="text-center display-5 fw-bold">
             The right journey close to you.
@@ -151,7 +162,7 @@
           </div>
         </header>
         <hr class="border-5 border-warning mb-5" />
-      </div>
+
     </div>
 
     <section class="container">
@@ -160,7 +171,7 @@
           <h2 class="text-center display-5 fw-bold">
             Explore our Fleet
           </h2>
-          <p class="px-5 fs-3 pt-3">
+          <p class=" fs-3 pt-3">
             We have many options for you. Choose from luxury sedans, sports cars and zero-emission electric cars to SUVs, vans and other types of vehicles.          </p>
       </header>
     </section>
@@ -169,17 +180,17 @@
     <div id="slider" class="carousel slide text-dark" data-bs-ride="carousel">
       <!-- Indicators -->
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#slider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2" class="bg-dark"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3" class="bg-dark"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4" class="bg-dark"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="4" aria-label="Slide 5" class="bg-dark"></button>
       </div>
   
       <!-- Carousel Items -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="row align-items-center">
+          <div class="row align-items-center me-5">
             <img src="Luxury.png" class="w-50 col-6 d-block img-fluid" alt="Luxury Cars and Sports Car">
           <div class="py-2 col-6">
             <h1 class="text-dark">Luxury Cars and Sports Car</h1>
@@ -190,7 +201,7 @@
         </div>
 
         <div class="carousel-item">
-          <div class="row align-items-center">
+          <div class="row align-items-center me-5 ">
             <img src="Van.png" class="w-50 col-6 d-block img-fluid" alt="Luxury Cars and Sports Car">
           <div class="py-2 col-6">
             <h1 class="text-dark">Moving Trucks and Vans</h1>
@@ -201,7 +212,7 @@
         </div>
 
         <div class="carousel-item">
-          <div class="row align-items-center">
+          <div class="row align-items-center me-5">
             <img src="EV.png" class="w-50 col-6 d-block img-fluid" alt="Luxury Cars and Sports Car">
           <div class="py-2 col-6">
             <h1 class="text-dark">Electric vehicles (EVs)</h1>
@@ -212,7 +223,7 @@
         </div>
         
         <div class="carousel-item">
-          <div class="row align-items-center">
+          <div class="row align-items-center me-5">
             <img src="suv_4x4.png" class="w-50 col-6 d-block img-fluid" alt="Luxury Cars and Sports Car">
           <div class="py-2 col-6">
             <h1 class="text-dark">SUVs</h1>
@@ -223,7 +234,7 @@
         </div>
 
         <div class="carousel-item">
-          <div class="row align-items-center">
+          <div class="row align-items-center me-5">
             <img src="minivan.png" class="w-50 col-6 d-block img-fluid" alt="Luxury Cars and Sports Car">
           <div class="py-2 col-6">
             <h1 class="text-dark">Minivans</h1>
@@ -235,17 +246,31 @@
       </div>
   
       <!-- Carousel Controls -->
-      <button class="carousel-control-prev btn btn-dark btn-lg" type="button" data-bs-target="#slider" data-bs-slide="prev">
+      <div class="container mt-5">
+         <button class="carousel-control-prev btn btn-dark " type="button" data-bs-target="#slider" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next btn btn-dark btn-lg" type="button" data-bs-target="#slider" data-bs-slide="next">
+      <button class="carousel-control-next btn btn-dark " type="button" data-bs-target="#slider" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
       <hr class="border-5 border-warning mb-5" />
+      </div>
+     
     </div>
 
+
+    <div class="container row align-items-center justify-content-center pt-5">
+      <img src="group-of-people-icon.png" class="w-25 col-6 d-block img-fluid" alt="icons group of people">
+      <div class="py-2 col-6 ps-5">
+        <h1 class="text-warning fw-bold" style="font-size: 5rem;">1.275</h1>
+        <p class="fs-4">Hertz Gold Plus Rewards® members booked vehicles in the last 24 hours.</p>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
     <div class="container">
       <footer class="mt-5 pt-5">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
